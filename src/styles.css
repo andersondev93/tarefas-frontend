@@ -1,0 +1,203 @@
+body {
+    background-color: #062759;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    width: 95%;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: #EFF7FF;
+    text-align: center;
+    color: #062759;
+    box-sizing: border-box;
+}
+
+.destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.destaque h1 {
+    font-size: 28px;
+}
+
+.add-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 15px;
+    border: 2px solid gray;
+    color: #47484c;
+    border-radius: 5px;
+    font-size: 20px;
+    outline-color: #062759;
+}
+
+
+button {
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-atualiza {
+    background-color: #0AAF60;
+    color: white;
+    max-width: 200px;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.task-list {
+    box-sizing: border-box;
+}
+
+
+.task-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    background: white;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+
+}
+
+.tarefa {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    text-align: start;
+}
+
+.concluido {
+    text-align: center;
+}
+
+.titulo {
+    text-align: start;
+    background-color: #EFF7FF;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.descricao {
+    max-width: 100%;
+    text-align: justify;
+}
+
+.data-hora p {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin: 0;
+
+}
+
+.botoes-tarefa {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+}
+
+.completed-task {
+    color: #1CC1A9;
+    opacity: 0.7;
+}
+
+.task-list button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+
+.completed-btn {
+    background-color: #1CC1A9;
+    color: white;
+}
+
+.editar-btn {
+    background-color: #062759;
+    color: white;
+}
+
+.excluir-btn {
+    background-color: #dc3545;
+    color: white;
+}
+
+.input-edt {
+    width: 95%;
+}
+
+.datetime-edit {
+    width: 95%;
+    margin: 10px auto;
+    background-color: #f5f9ff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.datetime-edit p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #062759;
+}
+
+.limpar-data-btn {
+    background-color: #f0ad4e;
+    color: white;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .container {
+        max-width: 1200px;
+    }
+
+}
