@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:3001/tasks";
+const API_URL = "https://tarefas-backend-nb1b.onrender.com/tasks";
 
 export const getTasks = async () => await axios.get(API_URL);
 
