@@ -11,9 +11,9 @@ export const updateTask = async (id, task) => await axios.put(`${API_URL}/${id}`
 export const deleteTask = async (id) => await axios.delete(`${API_URL}/${id}`);
 
 export const completeTask = async (id) => {
-    return await axios.patch(`http://localhost:3001/tasks/${id}/complete`);
+    return await axios.patch(`${API_URL}/${id}/complete`);
 };
 
 export const toggleTaskStatus = async (id) => {
-    return await axios.patch(`http://localhost:3001/tasks/${id}/toggle-status`);
+    return await axios.patch(`${API_URL}/${id}/toggle-status`);
 };
