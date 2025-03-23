@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getTasks, createTask, updateTask, deleteTask, toggleTaskStatus } from "./services/taskService";
-import "./styles.css";
+import "../styles.css";
 import { BiTask, BiEdit, BiCalendar } from "react-icons/bi";
 import { MdAddCircleOutline, MdDeleteOutline } from "react-icons/md";
 
