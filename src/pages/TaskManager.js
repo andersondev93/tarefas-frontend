@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { getTasks, createTask, updateTask, deleteTask, toggleTaskStatus } from "../services/taskService";
+import Header from "../components/Header";
 import "../styles.css";
 import { BiTask, BiEdit, BiCalendar } from "react-icons/bi";
 import { MdAddCircleOutline, MdDeleteOutline } from "react-icons/md";
 
-
-
-function App() {
+function TaskManager() {
   const [tasks, setTasks] = useState([]);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -15,7 +14,6 @@ function App() {
   const [editTitle, setEditTitle] = useState("");
   const [editDescription, setEditDescription] = useState("");
   const [editDateTime, setEditDateTime] = useState("");
-
 
   useEffect(() => {
     fetchTasks();
@@ -93,10 +91,7 @@ function App() {
 
   return (
     <div className="container">
-
-      <div className="destaque">
-        <h1>Gerenciador de Tarefas</h1><BiTask size={48} />
-      </div>
+      <Header />
 
       <div className="add-item">
         <h2>Nova Tarefa</h2>
@@ -191,4 +186,4 @@ function App() {
   );
 }
 
-export default App;
+export default TaskManager;
